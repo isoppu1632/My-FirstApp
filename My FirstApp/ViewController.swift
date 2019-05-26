@@ -10,10 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
-        
+    
+    @IBOutlet weak var myLavel: UILabel!
+    @IBAction func chengLavel(_ sender: Any) {
+        myLavel.text = "You Chenged me !"
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
